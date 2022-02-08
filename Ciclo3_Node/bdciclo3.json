@@ -1,0 +1,114 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"bdciclo3"},
+{"type":"table","name":"clientes","database":"bdciclo3","data":
+[
+{"id":"2","nome":"Leandro Reis","endereco":"Rua Serra da Paranapiacaba","cidade":"Apucarana","uf":"PR","nascimento":"1990-02-20","clienteDesde":"2021-10-27","createdAt":"2021-10-27 16:25:52","updatedAt":"2021-10-27 16:25:52"},
+{"id":"3","nome":"José da Silva","endereco":"Rua Canarinho n° 996","cidade":"Arapongas","uf":"PR","nascimento":"1980-07-29","clienteDesde":"2021-10-27","createdAt":"2021-10-27 16:32:40","updatedAt":"2021-10-27 16:32:40"},
+{"id":"4","nome":"Mariana Barros","endereco":"Rua Florinda n° 5026","cidade":"Londrina","uf":"PR","nascimento":"1985-01-15","clienteDesde":"2021-10-27","createdAt":"2021-10-27 16:37:37","updatedAt":"2021-10-27 16:37:37"},
+{"id":"5","nome":"Catarina Souza","endereco":"Rua Nossa Senhora da Alameda n° 28","cidade":"Curitiba","uf":"PR","nascimento":"1970-06-03","clienteDesde":"2021-10-27","createdAt":"2021-10-27 16:40:27","updatedAt":"2021-10-27 16:40:27"},
+{"id":"6","nome":"Luara Pinheiro","endereco":"Rua Piriquito n° 189","cidade":"Mandaguaçu","uf":"PR","nascimento":"1996-12-02","clienteDesde":"2021-10-27","createdAt":"2021-10-27 16:42:43","updatedAt":"2021-10-27 16:42:43"},
+{"id":"7","nome":"Severino Rocha","endereco":"Rua das Pombas n° 954","cidade":"Arapongas","uf":"PR","nascimento":"1975-05-25","clienteDesde":"2021-10-20","createdAt":"2021-10-27 17:26:18","updatedAt":"2021-10-27 17:26:18"},
+{"id":"8","nome":"Joana Carvalho","endereco":"Rua Chico das flores n° 7850","cidade":"Maringá","uf":"PR","nascimento":"1962-09-02","clienteDesde":"2021-10-15","createdAt":"2021-10-27 17:39:10","updatedAt":"2021-10-27 17:39:10"},
+{"id":"9","nome":"Genivaldo Rodrigues Barbosa","endereco":"Rua Pingo de ouro n° 7850","cidade":"Pirapó","uf":"PR","nascimento":"1975-03-18","clienteDesde":"2021-10-12","createdAt":"2021-10-27 17:40:21","updatedAt":"2021-10-27 17:40:21"},
+{"id":"10","nome":"Josafá Benedito da Silva","endereco":"Rua flores de ipê n° 3568","cidade":"Borrazópolis","uf":"PR","nascimento":"1960-09-05","clienteDesde":"2021-10-15","createdAt":"2021-10-27 17:48:17","updatedAt":"2021-10-27 17:48:17"},
+{"id":"11","nome":"Ana Medeiros","endereco":"Rua Osvaldo Cruz n° 2410","cidade":"Apucarana","uf":"PR","nascimento":"1995-10-25","clienteDesde":"2021-10-01","createdAt":"2021-10-28 19:08:20","updatedAt":"2021-10-28 19:08:20"},
+{"id":"12","nome":"Fabricio Souza","endereco":"Rua das Pombas n° 6910","cidade":"Dois Vizinhos","uf":"PR","nascimento":"1988-12-13","clienteDesde":"2021-10-12","createdAt":"2021-10-28 19:10:23","updatedAt":"2021-10-28 19:10:23"},
+{"id":"14","nome":"José da Silva Barros","endereco":"Rua dos Canarios n° 510","cidade":"Mandaguaçu","uf":"PR","nascimento":"1972-08-11","clienteDesde":"2021-10-29","createdAt":"2021-10-29 19:40:24","updatedAt":"2021-10-29 19:40:24"}
+]
+}
+,{"type":"table","name":"compras","database":"bdciclo3","data":
+[
+{"id":"1","data":"2021-10-28","createdAt":"2021-10-28 19:30:20","ClienteId":"6","updatedAt":"2021-10-28 19:30:20"},
+{"id":"2","data":"2021-10-15","createdAt":"2021-10-28 19:31:45","ClienteId":"12","updatedAt":"2021-10-28 19:31:45"},
+{"id":"3","data":"2021-10-12","createdAt":"2021-10-28 19:31:54","ClienteId":"11","updatedAt":"2021-10-28 19:31:54"},
+{"id":"4","data":"2021-10-24","createdAt":"2021-10-28 19:32:10","ClienteId":"8","updatedAt":"2021-10-28 19:32:10"},
+{"id":"6","data":"2021-10-29","createdAt":"2021-10-29 19:49:36","ClienteId":"14","updatedAt":"2021-10-29 19:49:36"},
+{"id":"7","data":"2021-10-29","createdAt":"2021-10-29 19:49:51","ClienteId":"2","updatedAt":"2021-10-29 19:49:51"}
+]
+}
+,{"type":"table","name":"itemcompras","database":"bdciclo3","data":
+[
+{"CompraId":"1","ProdutoId":"3","quantidade":"1","valor":"44.9","createdAt":"2021-10-28 19:37:46","updatedAt":"2021-10-28 19:37:46"},
+{"CompraId":"1","ProdutoId":"10","quantidade":"1","valor":"119.9","createdAt":"2021-10-28 19:37:30","updatedAt":"2021-10-28 19:37:30"},
+{"CompraId":"2","ProdutoId":"4","quantidade":"3","valor":"479.7","createdAt":"2021-10-28 19:38:36","updatedAt":"2021-10-29 19:28:32"},
+{"CompraId":"2","ProdutoId":"9","quantidade":"1","valor":"199.9","createdAt":"2021-10-28 19:39:06","updatedAt":"2021-10-28 19:39:06"},
+{"CompraId":"3","ProdutoId":"6","quantidade":"1","valor":"49.9","createdAt":"2021-10-28 19:40:04","updatedAt":"2021-10-28 19:40:04"},
+{"CompraId":"3","ProdutoId":"11","quantidade":"1","valor":"1300","createdAt":"2021-10-28 19:39:25","updatedAt":"2021-10-28 19:39:25"},
+{"CompraId":"4","ProdutoId":"4","quantidade":"3","valor":"479.7","createdAt":"2021-10-28 19:44:32","updatedAt":"2021-10-29 19:29:55"},
+{"CompraId":"4","ProdutoId":"5","quantidade":"1","valor":"24.9","createdAt":"2021-10-28 19:41:02","updatedAt":"2021-10-28 19:41:02"},
+{"CompraId":"4","ProdutoId":"12","quantidade":"1","valor":"1300","createdAt":"2021-10-28 19:45:16","updatedAt":"2021-10-28 19:45:16"},
+{"CompraId":"6","ProdutoId":"8","quantidade":"2","valor":"49.8","createdAt":"2021-10-29 19:53:20","updatedAt":"2021-10-29 19:53:20"},
+{"CompraId":"6","ProdutoId":"13","quantidade":"2","valor":"99.9","createdAt":"2021-10-29 19:53:40","updatedAt":"2021-10-29 19:53:40"},
+{"CompraId":"7","ProdutoId":"12","quantidade":"1","valor":"1300","createdAt":"2021-10-29 19:54:12","updatedAt":"2021-10-29 19:54:12"}
+]
+}
+,{"type":"table","name":"itempedidos","database":"bdciclo3","data":
+[
+{"PedidoId":"4","ServicoId":"3","quantidade":"2","valor":"2500","createdAt":"2021-10-27 17:14:40","updatedAt":"2021-10-29 18:48:50"},
+{"PedidoId":"4","ServicoId":"4","quantidade":"1","valor":"1499","createdAt":"2021-10-27 17:15:20","updatedAt":"2021-10-27 17:15:20"},
+{"PedidoId":"5","ServicoId":"2","quantidade":"2","valor":"2250","createdAt":"2021-10-27 17:22:13","updatedAt":"2021-10-27 17:22:13"},
+{"PedidoId":"5","ServicoId":"3","quantidade":"1","valor":"990","createdAt":"2021-10-27 17:22:41","updatedAt":"2021-10-27 17:22:41"},
+{"PedidoId":"5","ServicoId":"6","quantidade":"1","valor":"4000","createdAt":"2021-10-27 17:21:50","updatedAt":"2021-10-27 17:21:50"},
+{"PedidoId":"6","ServicoId":"2","quantidade":"1","valor":"350","createdAt":"2021-10-27 17:24:32","updatedAt":"2021-10-27 17:24:32"},
+{"PedidoId":"6","ServicoId":"5","quantidade":"1","valor":"2900","createdAt":"2021-10-27 17:24:16","updatedAt":"2021-10-27 17:24:16"},
+{"PedidoId":"7","ServicoId":"1","quantidade":"1","valor":"1500","createdAt":"2021-10-27 17:27:52","updatedAt":"2021-10-27 17:27:52"},
+{"PedidoId":"7","ServicoId":"3","quantidade":"1","valor":"1350","createdAt":"2021-10-27 17:28:19","updatedAt":"2021-10-27 17:28:19"},
+{"PedidoId":"8","ServicoId":"1","quantidade":"1","valor":"590","createdAt":"2021-10-27 17:30:52","updatedAt":"2021-10-27 17:30:52"},
+{"PedidoId":"8","ServicoId":"4","quantidade":"1","valor":"1100","createdAt":"2021-10-27 17:30:02","updatedAt":"2021-10-27 17:30:02"},
+{"PedidoId":"8","ServicoId":"5","quantidade":"1","valor":"2990","createdAt":"2021-10-27 17:29:47","updatedAt":"2021-10-27 17:29:47"},
+{"PedidoId":"9","ServicoId":"3","quantidade":"1","valor":"1950","createdAt":"2021-10-27 17:44:01","updatedAt":"2021-10-27 17:44:01"},
+{"PedidoId":"10","ServicoId":"3","quantidade":"5","valor":"2330","createdAt":"2021-10-27 17:45:06","updatedAt":"2021-10-27 17:45:06"},
+{"PedidoId":"11","ServicoId":"5","quantidade":"1","valor":"1500","createdAt":"2021-10-27 17:45:37","updatedAt":"2021-10-27 17:45:37"},
+{"PedidoId":"12","ServicoId":"2","quantidade":"1","valor":"1299","createdAt":"2021-10-27 17:49:29","updatedAt":"2021-10-27 17:49:29"}
+]
+}
+,{"type":"table","name":"pedidos","database":"bdciclo3","data":
+[
+{"id":"4","data":"2021-10-26","createdAt":"2021-10-27 17:03:57","ClienteId":"2","updatedAt":"2021-10-27 17:03:57"},
+{"id":"5","data":"2021-10-26","createdAt":"2021-10-27 17:17:18","ClienteId":"3","updatedAt":"2021-10-27 17:17:18"},
+{"id":"6","data":"2021-10-27","createdAt":"2021-10-27 17:23:29","ClienteId":"6","updatedAt":"2021-10-27 17:23:29"},
+{"id":"7","data":"2021-10-23","createdAt":"2021-10-27 17:27:01","ClienteId":"4","updatedAt":"2021-10-27 17:27:01"},
+{"id":"8","data":"2021-10-23","createdAt":"2021-10-27 17:29:16","ClienteId":"7","updatedAt":"2021-10-27 17:29:16"},
+{"id":"9","data":"2021-10-20","createdAt":"2021-10-27 17:41:16","ClienteId":"9","updatedAt":"2021-10-27 17:41:16"},
+{"id":"10","data":"2021-10-16","createdAt":"2021-10-27 17:41:30","ClienteId":"8","updatedAt":"2021-10-27 17:41:30"},
+{"id":"11","data":"2021-10-23","createdAt":"2021-10-27 17:42:05","ClienteId":"7","updatedAt":"2021-10-27 17:42:05"},
+{"id":"12","data":"2021-10-25","createdAt":"2021-10-27 17:48:43","ClienteId":"10","updatedAt":"2021-10-27 17:48:43"}
+]
+}
+,{"type":"table","name":"produtos","database":"bdciclo3","data":
+[
+{"id":"3","nome":"Mouse","descricao":"Mouse Optico","createdAt":"2021-10-28 18:47:51","updatedAt":"2021-10-29 18:57:10"},
+{"id":"4","nome":"Teclado Gamer","descricao":"Teclado Gamer Trust Ziva, LED, USB, Teclas Multimídia, Preto - 23697","createdAt":"2021-10-28 18:49:31","updatedAt":"2021-10-28 18:49:31"},
+{"id":"5","nome":"Pen Drive 16GB","descricao":"Pen Drive 16GB USB 2.0 Cruzer Blade Rosa - SanDisk","createdAt":"2021-10-28 18:50:36","updatedAt":"2021-10-28 18:50:36"},
+{"id":"6","nome":"Pen Drive 32GB","descricao":"Pen Drive Cruzer Blade, SanDisk, 32GB, SDCZ60-032G-B35","createdAt":"2021-10-28 18:51:30","updatedAt":"2021-10-28 18:51:30"},
+{"id":"8","nome":"Fone de Ouvido","descricao":"Fone de Ouvido Philips Série 1000 - TAUE100BK\/00","createdAt":"2021-10-28 18:53:50","updatedAt":"2021-10-28 18:53:50"},
+{"id":"9","nome":"Headset Gamer","descricao":"Headset Gamer HyperX Cloud Stinger Core PS4\/Xbox One\/Nintendo Switch","createdAt":"2021-10-28 18:55:20","updatedAt":"2021-10-28 18:55:20"},
+{"id":"10","nome":"Mouse Gamer","descricao":"Mouse Gamer P301 Rgb 4000DPI preto, PGM-P301-RGB","createdAt":"2021-10-28 18:57:01","updatedAt":"2021-10-28 18:57:01"},
+{"id":"11","nome":"Monitor para PC 29”","descricao":"Monitor para PC Full HD UltraWide LG LED IPS 29” - 29WK600","createdAt":"2021-10-28 18:59:04","updatedAt":"2021-10-28 18:59:04"},
+{"id":"12","nome":"Monitor para PC 27”","descricao":"Monitor Philips 27” IPS com HDMI e Bordas Ultrafinas","createdAt":"2021-10-28 19:02:19","updatedAt":"2021-10-28 19:02:19"},
+{"id":"13","nome":"Mousepad Gamer","descricao":"Mousepad Gamer Havit Control, Extra Grande (900x300mm) - HV-MP830!","createdAt":"2021-10-29 19:39:15","updatedAt":"2021-10-29 19:39:15"}
+]
+}
+,{"type":"table","name":"sequelizemeta","database":"bdciclo3","data":
+[
+{"name":"20211026141927-create-cliente.js"},
+{"name":"20211026142558-create-servico.js"},
+{"name":"20211026142911-create-pedido.js"},
+{"name":"20211026143133-create-item-pedido.js"},
+{"name":"20211028171846-create-compra.js"},
+{"name":"20211028171919-create-produto.js"},
+{"name":"20211028172036-create-item-compra.js"}
+]
+}
+,{"type":"table","name":"servicos","database":"bdciclo3","data":
+[
+{"id":"1","nome":"Java","descricao":"Aplicação orientada a objeto","createdAt":"2021-10-27 12:29:56","updatedAt":"2021-10-29 18:43:34"},
+{"id":"2","nome":"Infraestrutura","descricao":"Instalação, configuração e manutenção de equipaementos","createdAt":"2021-10-27 12:45:12","updatedAt":"2021-10-27 12:45:12"},
+{"id":"3","nome":"Rede de computadores   ","descricao":"Desenvolve projetos de redes locais e implantações de soluções","createdAt":"2021-10-27 13:00:00","updatedAt":"2021-10-27 13:00:00"},
+{"id":"4","nome":"HTML\/CSS","descricao":"Páginas estáticas estilizadas","createdAt":"2021-10-27 13:00:29","updatedAt":"2021-10-27 13:00:29"},
+{"id":"5","nome":"Nodejs","descricao":"Desenvolvimento de aplicação back-end","createdAt":"2021-10-27 13:00:50","updatedAt":"2021-10-27 13:00:50"},
+{"id":"6","nome":"Python","descricao":"Desenvolvimento de aplicação!","createdAt":"2021-10-27 16:00:59","updatedAt":"2021-10-27 16:00:59"}
+]
+}
+]

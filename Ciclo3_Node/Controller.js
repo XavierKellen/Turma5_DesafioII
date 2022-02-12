@@ -578,6 +578,77 @@ app.get('/excluirproduto/:id', async(req,res)=>{
     });
 });
 
+//consultar o item do pedido
+app.get('/itempedido/:idPedido/:idServico',async(req,res) =>{
+    await itempedido.findAll({
+        where: Sequelize.and({PedidoId: req.params.idPedido},
+                             {ServicoId: req.params.idServico})               
+    }).then(item =>{
+        return res.json({
+            error: false,
+            item
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message:"Erro: Não foi possível conectar."
+        });
+    });
+});
+
+app.delete('/excluiritempedido/:idPedido/:idServico', async(req,res)=>{
+    await itempedido.destroy({
+        where: Sequelize.and({PedidoId: req.params.idPedido},
+                             {ServicoId: req.params.idServico})  
+    }).then(function(){
+        return res.json({
+            error: false,
+            message: "Item do Pedido foi excluído com sucesso!"
+        });
+    }).catch(erro => {
+        return res.status(400).json({
+            error: true,
+            message: "Erro ao excluir o Item do Pedido."
+        });
+    });
+});
+
+//consultar o item da compra
+app.get('/itemcompra/:idCompra/:idProduto',async(req,res) =>{
+    await itemcompra.findAll({
+        where: Sequelize.and({CompraId: req.params.idCompra},
+                             {ProdutoId: req.params.idProduto})               
+    }).then(item =>{
+        return res.json({
+            error: false,
+            item
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message:"Erro: Não foi possível conectar."
+        });
+    });
+});
+
+app.delete('/excluiritemcompra/:idCompra/:idProduto', async(req,res)=>{
+    await itemcompra.destroy({
+        where: Sequelize.and({CompraId: req.params.idCompra},
+                             {ProdutoId: req.params.idProduto})  
+    }).then(function(){
+        return res.json({
+            error: false,
+            message: "Item da Compra foi excluído com sucesso!"
+        });
+    }).catch(erro => {
+        return res.status(400).json({
+            error: true,
+            message: "Erro ao excluir o Item da Compra."
+        });
+    });
+});
+
+
 let port=process.env.PORT || 3001; //3001
 
 app.listen(port,(req,res)=>{

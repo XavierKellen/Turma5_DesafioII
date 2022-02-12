@@ -20,6 +20,8 @@ import { CadastrarProduto } from './views/Produto/Cadastrar/';
 import { ComprasProduto } from './views/Produto/Item/';
 import { CadastrarItemCompra } from './views/Compra/CadastrarItens/';
 import { ItensCompra } from './views/Compra/Item/';
+import { EditarPedido } from './views/Pedido/EditarPedido/';
+import { EditarCompra } from './views/Compra/EditarCompra/';
  
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path="/listar-compra/:id" component={ComprasProduto}></Route>
           <Route path="/cadastrar-item-compra" component={CadastrarItemCompra}></Route>
           <Route path="/listar-itens-compra/:id" component={ItensCompra}></Route>
+          <Route path="/editar-item-pedido/:idPedido/:idServico" component={EditarPedido}></Route>          
+          <Route path="/editar-item-compra/:idCompra/:idProduto" component={EditarCompra}></Route>
         </Switch>
       </Router>
 

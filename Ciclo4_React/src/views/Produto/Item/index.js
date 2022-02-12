@@ -62,7 +62,7 @@ export const ComprasProduto = (props) => {
                                 <td>{item.quantidade}</td>
                                 <td>{item.valor}</td>
                                 <td className="text-center/">
-                                    <Link to={"listar-pedido/"+item.id}
+                                    <Link to={"/listar-itens-compra/"+item.CompraId}
                                     className="btn btn-outline-primary btn-sm">Consultar</Link>
                                 </td>
                             </tr>

@@ -65,7 +65,12 @@ export const ItensPedido = (props) => {
                                 <td>{item.PedidoId}</td>
                                 <td>{item.ServicoId}</td>
                                 <td>{item.quantidade}</td>
-                                <td>{item.valor}</td>                               
+                                <td>{item.valor}</td> 
+
+                                <td className="text-center/">
+                                    <Link to={"/editar-item-pedido/"+item.PedidoId+"/"+item.ServicoId}
+                                    className="btn btn-outline-primary btn-sm">Alterar Item</Link>
+                                </td>                              
                             </tr>
                         ))}
 

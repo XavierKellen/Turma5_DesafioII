@@ -45,9 +45,14 @@ export const ItensPedido = (props) => {
                     <h1>Itens do Pedido</h1>
                 </div>
                 <div className="m-auto p-2">
-                    <Link to="/cadastar-item-pedido"
-                        className="btn btn-outline-primary btn-sm">Cadastrar Itens</Link>
+                    <Link to={"/cadastar-item-pedido/"+id}
+                        className="btn btn-outline-success btn-sm">Cadastrar Itens</Link>
+                    <Link to="/listar-pedidos" 
+                        className="m-auto btn btn-outline-primary btn-sm">Voltar</Link>       
                 </div>
+                <div className="p-2">
+                       
+                    </div>
                 {status.type == 'error' ? <Alert color="danger"> {status.message} </Alert> : ""}
                 
                 <Table striped>

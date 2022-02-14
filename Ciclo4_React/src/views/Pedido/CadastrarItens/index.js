@@ -6,12 +6,11 @@ import {useEffect, useState } from "react";
 import axios from "axios";
 import { api } from "../../../config";
 
-export const CadastrarItemPedido = () => {
-
-    const [data, setData] = useState([]);
+export const CadastrarItemPedido = (props) => {    
+    const [idPedido, setIdPedido] = useState(props.match.params.idPedido);  
 
     const [itempedido, setItemPedido] = useState({         
-        PedidoId: '',
+        PedidoId: idPedido,
         ServicoId: '',
         quantidade: '',
         valor: ''      
@@ -70,7 +69,8 @@ export const CadastrarItemPedido = () => {
             <Form className="p-2" onSubmit={cadItemPedido}>
                 <FormGroup className="p-2">
                     <Label>Id Pedido</Label>
-                    <Input type="text" name="PedidoId" onChange={valorInput}/>                                    
+                    <Input type="text" name="PedidoId" 
+                    onChange={valorInput} defaultValue={idPedido} disabled/>                                    
                 </FormGroup>
                 
                 <FormGroup className="p-2">
@@ -89,6 +89,12 @@ export const CadastrarItemPedido = () => {
                 </FormGroup>  
                         
                 <Button type="submit" outline color="success">Cadastrar</Button>
+               
+                <Link to={"/listar-itens-pedido/"+idPedido}
+                            className="btn btn-outline-primary">
+                            Voltar
+                </Link>
+                               
             </Form>
         </Container>
     );

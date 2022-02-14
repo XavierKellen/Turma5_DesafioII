@@ -22,6 +22,9 @@ import { CadastrarItemCompra } from './views/Compra/CadastrarItens/';
 import { ItensCompra } from './views/Compra/Item/';
 import { EditarPedido } from './views/Pedido/EditarPedido/';
 import { EditarCompra } from './views/Compra/EditarCompra/';
+import { EditarCliente } from './views/Cliente/EditarCliente/';
+import { EditarServico } from './views/Servico/EditarServico/';
+import { EditarProduto } from './views/Produto/EditarProduto/';
  
 function App() {
   return (
@@ -39,7 +42,7 @@ function App() {
           <Route path="/cadastrarcliente" component={CadastrarCliente}></Route>
           <Route path="/listar-itens-pedido/:id" component={ItensPedido}></Route>
           <Route path="/cadastrar-pedido" component={CadastrarPedido}></Route>
-          <Route path="/cadastar-item-pedido" component={CadastrarItemPedido}></Route>
+          <Route path="/cadastar-item-pedido/:idPedido" component={CadastrarItemPedido}></Route>
           <Route path="/listar-compras" component={ListarCompra}></Route>
           <Route path="/cadastrar-compra" component={CadastrarCompra}></Route>
           <Route path="/listar-produtos" component={ListarProduto}></Route>
@@ -49,6 +52,9 @@ function App() {
           <Route path="/listar-itens-compra/:id" component={ItensCompra}></Route>
           <Route path="/editar-item-pedido/:idPedido/:idServico" component={EditarPedido}></Route>          
           <Route path="/editar-item-compra/:idCompra/:idProduto" component={EditarCompra}></Route>
+          <Route path="/editar-cliente/:idCliente" component={EditarCliente}></Route>
+          <Route path="/editar-servico/:idServico" component={EditarServico}></Route>
+          <Route path="/editar-produto/:idProduto" component={EditarProduto}></Route>
         </Switch>
       </Router>
 

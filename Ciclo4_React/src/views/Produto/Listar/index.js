@@ -68,6 +68,11 @@ export const ListarProduto = () => {
                                     <Link to={"listar-compra/" + item.id}
                                         className="btn btn-outline-primary btn-sm">Consultar Compras</Link>
                                 </td>
+
+                                <td className="text-center/">
+                                    <Link to={"editar-produto/" + item.id}
+                                        className="btn btn-outline-primary btn-sm">Alterar Produto</Link>
+                                </td>                                
                             </tr>
                         ))}
 

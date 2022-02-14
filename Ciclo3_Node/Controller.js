@@ -648,6 +648,57 @@ app.delete('/excluiritemcompra/:idCompra/:idProduto', async(req,res)=>{
     });
 });
 
+//Busca Cliente por Id
+app.get('/buscaclientes/:idCliente', async(req,res)=>{    
+    await cliente.findAll({
+        where: {id: req.params.idCliente}})
+    .then(cliente =>{
+        return res.json({
+            error: false,
+            cliente
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message:"Erro: Não foi possível conectar."
+        });
+    });
+});
+
+//Busca Serviço por Id
+app.get('/buscaservicos/:idServico', async(req,res)=>{    
+    await servico.findAll({
+        where: {id: req.params.idServico}})
+    .then(servico =>{
+        return res.json({
+            error: false,
+            servico
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message:"Erro: Não foi possível conectar."
+        });
+    });
+});
+
+//Busca Produto por Id
+app.get('/buscaprodutos/:idProduto', async(req,res)=>{    
+    await produto.findAll({
+        where: {id: req.params.idProduto}})
+    .then(produto =>{
+        return res.json({
+            error: false,
+            produto
+        });
+    }).catch(function(erro){
+        return res.status(400).json({
+            error: true,
+            message:"Erro: Não foi possível conectar."
+        });
+    });
+});
+
 
 let port=process.env.PORT || 3001; //3001
 

@@ -46,7 +46,9 @@ export const ItensCompra = (props) => {
                 </div>
                 <div className="m-auto p-2">
                     <Link to="/cadastrar-item-compra"
-                        className="btn btn-outline-primary btn-sm">Cadastrar Itens</Link>
+                        className="btn btn-outline-success btn-sm">Cadastrar Itens</Link>
+                    <Link to="/listar-compras" 
+                        className="m-auto btn btn-outline-primary btn-sm">Voltar</Link>     
                 </div>
                 {status.type == 'error' ? <Alert color="danger"> {status.message} </Alert> : ""}
                 
